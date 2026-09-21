@@ -216,3 +216,43 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================
+# Project-Specific Ignores
+# ============================================
+
+# ===== Data Files (never commit large datasets) =====
+*.csv
+*.parquet
+*.avro
+*.orc
+*.json
+*.jsonl
+data/
+datasets/
+raw_data/
+processed_data/
+output/
+
+# ===== DuckDB / Databases =====
+*.duckdb
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== Apache Spark =====
+spark-warehouse/
+metastore_db/
+derby.log
+*.log
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
